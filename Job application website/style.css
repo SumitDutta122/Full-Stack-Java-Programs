@@ -1,0 +1,94 @@
+*{
+    margin:0;                   /* this piece of code will format the previous saved css */ 
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    max-width: 900px;     
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600px;  
+    padding: 20px;               /* this'll create space from the content */
+    background-color: white;
+    margin: 0 auto;              /* zero from all sides */
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(197, 192, 255, 0.664);
+    border-radius: 9px;         /* chamfering from corners */
+}
+
+.small{
+   font-size: 18px; 
+}
+
+.form_Container{
+    margin-top: 20px;
+   display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   /* automatically this will set all the items in best possible way */
+   gap: 20px;   /* gap between the Grid */
+}
+
+.form_control{
+    display:flex;      /*  used for alignment */
+    flex-direction: column;    /* used for alignment*/
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input , select , textarea{
+    padding: 6px 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline-color: rgba(197, 192, 255, 0.664);
+}
+
+.button_container{
+     display:flex;
+     justify-content: flex-end;
+     margin-top: 20px;
+
+}
+
+button{
+    background-color: rgba(197, 192, 255, 0.664);
+    border: 2px;
+    padding: 5px 10px 10px;
+    border-radius: 8px;
+    transition: 0.1s ease-in;           /* button trasition */
+}
+
+
+button:hover{
+    background-color: #ccc;
+    border: 2px solid mediumseagreen;
+    color: black;
+    transition: 0.1s ease-out;          /* bnutton trasition */
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea{
+    width: 100%;
+} 
+
+@media (max-width: 460px) {              /*this is media query that is used to control mobile view of any project while resizing any project to a minumum level the display may not justify*/
+    .textarea_control{
+        grid-column: 1 / span 2;
+    }
+}
