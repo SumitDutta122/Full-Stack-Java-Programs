@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+}
+
+.pimg1{
+background-image: url(./Images/1191961.jpg);
+min-height: 100%;
+}
+
+
+.pimg2{
+    background-image: url(./Images/1253603.jpg);
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url(./Images/mikael-gustafsson-amongtrees-2-8.jpg);
+    min-height: 400px;
+}
+
+
+
+.pimg1, .pimg2, .pimg3{
+position: relative;                /* this'll fix the oversized image*/
+background-position: center;       /* this'll take care of position*/
+background-size: cover;            /* will cover the entire image*/
+background-repeat: no-repeat;      /* any image will not repeat over and over*/
+background-attachment: fixed;
+}
+
+.ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 8px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.textBg{
+    background: #313534;
+    color: #fff;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 8px;
+    text-align: center;
+}
+
+.section section-light{
+    background-color: #7f868d;
+    color: #ddd;
+}
+
+.section-dark{
+    color:#ddd;
+    background-color: #282e34;
+}
